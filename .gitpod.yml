@@ -2,3 +2,9 @@
 RUN useradd -l -u 33333 -G sudo -md /home/gitpod -s /bin/bash -p gitpod gitpod
 
 USER gitpod
+
+
+tasks:
+    - command: sudo apt update && sudo apt install neo-vim
+    - command: sudo update-alternatives --install /usr/bin/ollama ollama /workspace/ollama/ollama 1
+ 
