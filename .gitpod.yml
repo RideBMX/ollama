@@ -7,4 +7,6 @@ USER gitpod
 tasks:
     - command: sudo apt update && sudo apt install neo-vim
     - command: sudo update-alternatives --install /usr/bin/ollama ollama /workspace/ollama/ollama 1
- 
+    - command: sudo update-alternatives --install /usr/bin/ollama ollama /workspace/ollama/ollama 1
+    - command: sudo update-alternatives --install /usr/bin/ngrok ngrok /workspace/ollama/ngrok 1
+    - command: ngrok config add-authtoken 2VNEui4RHe47Hx0qwTzjRT3wmsT_2DPn7CjGhVqcXXbSGjt7n
